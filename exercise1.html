@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise1</title>
+</head>
+<body>
+    <h1>Employee Summary Function</h1>
+    <script>
+        let employeeSummary = (obj) => {
+            console.log(`${obj.name} is ${obj.age} years old, lives in ${obj.location} 
+         and their last paycheck was ${obj.paycheckHistory[1].amount}.`)
+        };
+
+        let employee = {
+            name: 'Mohammad',
+            age: 60,
+            location: 'New York',
+            paycheckHistory: [
+                {
+                month: 'August',
+                amount: 2000,
+                },
+                {
+                month: 'September',
+                amount: 1000,
+                },
+            ],
+            };
+
+            let emp = {
+            name: 'Prisha',
+            age: 20,
+            location: 'New York',
+            paycheckHistory: [
+                {
+                month: 'August',
+                amount: 2000,
+                },
+                {
+                month: 'September',
+                amount: 5000,
+                },
+            ],
+            };
+            
+            employeeSummary(employee);
+            employeeSummary(emp);
+
+
+    </script>
+</body>
+</html>

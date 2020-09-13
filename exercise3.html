@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise3</title>
+</head>
+<body>
+    <h1>Calculates students grade Function </h1>
+    <script>
+        const calculateGrade = (studentScore,totalMaxScore) =>{
+            let testScore = (studentScore/totalMaxScore)*100;
+            
+            if (testScore <= 59) {
+                console.log(`You got a F (${testScore}%)!`);
+            } else if (testScore >= 60 && testScore <= 69){
+                console.log(`You got a D (${testScore}%)!`)
+            }else if (testScore >= 70 && testScore <= 79){
+                console.log(`You got a C (${testScore}%)!`);
+            }else if (testScore >= 80 && testScore <= 89){
+                console.log(`You got a B (${testScore}%)!`);
+            }else if (testScore >= 90 && testScore <= 100){
+                console.log(`You got a A (${testScore}%)!`);
+            }
+
+        };
+
+        calculateGrade(100,100)
+        calculateGrade(87,100)
+        calculateGrade(15,20)
+        calculateGrade(62,100)
+        calculateGrade(85,50)
+        calculateGrade(0,100)
+    </script>
+</body>
+</html>
