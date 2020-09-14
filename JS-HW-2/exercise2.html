@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2</title>
+</head>
+<body>
+    <h1> Fahrenheit to Celsius converter function</h1>
+    <script>
+        const fahrenheitToCelsius = (tempF) =>{
+           let tempC = Math.floor((tempF-32)*(5/9));
+           console.log(`${tempF}°F is ${tempC}°C`)
+           return tempC;
+        };
+
+        fahrenheitToCelsius(100);
+        fahrenheitToCelsius(5);
+        fahrenheitToCelsius(80);
+    </script>
+</body>
+</html>
