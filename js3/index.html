@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsHW3</title>
+    <style>
+        div {
+          max-width: 600px;
+          min-width: 400px;
+        }
+        </style>
+</head>
+<body>
+    <h1>JS Homework 3</h1>
+ <div> 
+    <p>
+        <h2>Pre-requisites:</h2>
+        <ol>
+            <li>Use the same test repository that you created before</li>
+            <li>Clone that repo to local folder, create new branch and switch to it</li>
+            <li>Initialize new node project following the steps I shared in the last class.</li>
+        </ol>
+      
+            <li>initialize new node project</li>
+            <li>install mocha and chai as dependencies</li>
+            <li>create .gitignore file</li>
+            <li>add tests script to your package.json which will run all files with .test.js extension</li>
+            <li>create scr and test folders in the root of your project</li>
+           
+            <p>
+                <h2>Homework:</h2>
+                <ol>
+                    <li>
+                        Update your fahrenheitToCelsius converter function that you created previously and add test coverage:
+                            - add error handling for all function arguments
+                            - make sure your converter returns converted value
+                            - put the function under the describe block of your test (similar to how we did it in the class. Also see the example in the github repository that I invited you to)
+                            - add as many test cases to your mocha file to make sure that your converter function works as expected
+                    </li>
+                    <br>
+                    <li>
+                        Do the same to the grade calculation function as you did in exercise #1, but this time put this function in 
+                        the external file (in the src folder) and import it in your mocha test file. Please create new test file for 
+                        this function, do NOT use the same test file as you used for fahrenheitToCelsius converter function.
+                    </li>
+                        <br>
+                    <li>
+                        Write a function that takes a number as an argument (call it maxNum) and logs in the console each number from 1 to maxNum. 
+                        For each multiple of 3, add word "Fizz" instead of the number to the log statement.
+                        For each multiple of 5, add word "Buzz" instead of the number to the log statement.
+                        For numbers which are multiples of both 3 and 5, add "FizzBuzz" instead of the number.
+                            <a href="./fizzbuzz.html">FizzBuzz</a>
+                    </li>
+                </ol>
+                    I.e. you should see this in the console if you pass 15 as an argument:
+                        [
+                        "1",
+                        "2",
+                        "Fizz",
+                        "4",
+                        "Buzz",
+                        "Fizz",
+                        "7",
+                        "8",
+                        "Fizz",
+                        "Buzz",
+                        "11",
+                        "Fizz",
+                        "13",
+                        "14",
+                        "FizzBuzz"
+</p>
+</div>  
+
+    </p>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mika_Homework1</title>
+    </head>
+    <body>
+    <h1>DamikaG's Homework 1</h1>
+    <p>
+        Create new HTML file, use Emmet abbreviations to generate 
+        basic HTML snippet and add your JS between script tags.</p>
+    <p>  
+        Task:
+            Having following object:
+            let employee = {
+            name: 'Mohammad',
+            age: 17,
+            location: 'New York',
+            paycheckHistory: [
+                {
+                month: 'August',
+                amount: 2000,
+                },
+                {
+                month: 'September',
+                amount: 1000,
+                },
+            ],
+            };
+    </p>
+
+<li>    1. Declare a variable "employeeSummary" and set it to the string value like this:
+"Mohammad is 32 years old, lives in New York and his last paycheck was $2000."
+You need to dynamically pull name, age and location values from the employee object using template literals.</li>
+<li>    2. Log result (employeeSummary) in the console </li>
+<li>    3. Now, update employee object by making following changes: 
+  - add 1 to age
+  - update September's paycheck amount to 3000 </li>
+<li>    4. Log the result (employeeSummary) in the console again </li>
+<li>    5. Save your code in previously generated HTML file direct message it to me and Gurveer in Slack. </li>
+    </p>
+    <script>
+        let employee = {
+            name: 'Mohammad',
+            age: 17,
+            location: 'New York',
+            paycheckHistory: [
+                {
+                month: 'August',
+                amount: 2000,
+                },
+                {
+                month: 'September',
+                amount: 1000,
+                },
+            ],
+            };
+            
+        let employeeSummary = `${employee.name} is ${employee.age} years old, lives in ${employee.location} 
+         and his last paycheck was ${employee.paycheckHistory[1].amount}.`; 
+
+         
+        console.log(employeeSummary);
+         
+        employee.age += 1;
+        employee.paycheckHistory[1].amount = 3000;
+
+        employeeSummary = `${employee.name} is ${employee.age} years old, lives in ${employee.location} 
+        and his last paycheck was ${employee.paycheckHistory[1].amount}.`; 
+
+        console.log(employeeSummary);
+
+
+
+    </script>
+</body>
+</html>
