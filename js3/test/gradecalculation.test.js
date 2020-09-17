@@ -30,6 +30,7 @@ describe("Calculate Grade Tests", () => {
     describe('Negative Path', () => {
         it('Verify error message (25,3) - Student score higher than Max score ', () => {
             let actualResult = calculateGrade(25,3)
+            console.log(actualResult);
             expect(actualResult).to.equal("Student score must be smaller than Max Score");
         });
         it('Verify error message (-90,-100) -- Both student and max score are negative', () => {
