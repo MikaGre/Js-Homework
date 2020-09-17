@@ -1,0 +1,17 @@
+{
+  "name": "js3",
+  "version": "1.0.0",
+  "description": "js homework 3",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha './**/*.test.js'"
+  },
+  "author": "mikagre",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.3"
+  }
+
+}
