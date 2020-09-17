@@ -16,18 +16,15 @@ describe('Converting temperatures from Fahrenheit to Celsius', () => {
     describe('Happy Path ', () => {
     
         it('Verify 100°F is 37°C', () => {
-            let actualResult = fahrenheitToCelsius(100); 
-            expect(actualResult).to.equal(37);
+            expect(fahrenheitToCelsius(100)).to.equal(37);
         });
 
         it('Verify 0°F is -18°C', () => {
-            let actualResult = fahrenheitToCelsius(0); 
-            expect(actualResult).to.equal(-18);
+            expect(fahrenheitToCelsius(0)).to.equal(-18);
         }); 
 
         it('Verify -10°F is -24°C', () => {
-            let actualResult = fahrenheitToCelsius(-10); 
-            expect(actualResult).to.equal(-24);
+            expect(fahrenheitToCelsius(-10)).to.equal(-24);
         });  
 
 });

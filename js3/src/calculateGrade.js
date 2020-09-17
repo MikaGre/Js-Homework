@@ -25,7 +25,6 @@ let calculateGrade = (studentScore,totalMaxScore) => {
     } else if (testScore >= 90){
         letterGrade = 'A';
     }
-    console.log(`You got a ${letterGrade} (${testScore}%)!`);
     return letterGrade;
 };
 
