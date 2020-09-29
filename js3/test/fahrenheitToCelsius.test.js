@@ -32,18 +32,18 @@ describe('Converting temperatures from Fahrenheit to Celsius', () => {
     describe('Negative Path', () => {
     
         it('Verify special char {!} receives error message', () => {
-            let actualResult = typeof fahrenheitToCelsius('!'); 
-            expect(actualResult).to.have.string();
+            let actualResults = typeof fahrenheitToCelsius('!'); 
+            expect(actualResults).to.have.string();
         });
 
         it('Verify string {temp} receives error message', () => {
-            let actualResult = typeof fahrenheitToCelsius('temp'); 
-            expect(actualResult).to.have.string();
+            let actualResults = typeof fahrenheitToCelsius('temp'); 
+            expect(actualResults).to.have.string();
         });  
 
         it('Verify string {""} receives error message', () => {
-            let actualResult = typeof fahrenheitToCelsius(); 
-            expect(actualResult).to.have.string();
+            let actualResults = typeof fahrenheitToCelsius(); 
+            expect(actualResults).to.have.string();
         }); 
 
 });
