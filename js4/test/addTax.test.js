@@ -22,11 +22,11 @@ describe('Add tax to array values', () => {
     describe('Neagtive Path', () => {
         
         it('TestArray = [-10, -20, -30]', () => {
-            expect(addTax([-10, -20, -30])).to.eql("Function needs positive numbers");
+            expect(addTax([-10, -20, -30])).to.eql("Invalid numbers");
         });
 
         it('TestArray = [-10, 20, 30]', () => {
-            expect(addTax([-10, 20, 30])).to.eql("Function needs positive numbers");
+            expect(addTax([-10, 20, 30])).to.eql("Invalid numbers");
         });
 
         it('TestArray = []', () => {
@@ -34,7 +34,7 @@ describe('Add tax to array values', () => {
         });
 
         it('TestArray = ["10", 20, 30]', () => {
-            expect(addTax(["10", 20, 30])).to.eql("Function ONLY works with numbers");
+            expect(addTax(["10", 20, 30])).to.eql("Invalid numbers");
         });
     });
 });

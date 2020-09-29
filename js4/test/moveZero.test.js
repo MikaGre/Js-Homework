@@ -39,7 +39,5 @@ describe('Move all 0s to end of Array', () => {
         it('Input: []', () => {
             expect(moveZero([])).to.eql("Array is empty");
         });
-
-        
     });
 });

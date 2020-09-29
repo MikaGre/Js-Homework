@@ -27,5 +27,6 @@ let moveZero =  (numArray) => {
       }
     return numArray
     }
-    
+    // return numArray.filter(x => x !== 0)
+    //.concat(numArray.filter(x => x ===))
     module.exports = moveZero;
